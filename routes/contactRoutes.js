@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
 const {
@@ -13,4 +13,4 @@ router.route("/").get(getContacts).post(createContact);
 
 router.route("/:id").get(getContact).put(updateContact).delete(deleteContact);
 
-module.exports = router;
+export default router;

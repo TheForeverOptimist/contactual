@@ -1,5 +1,4 @@
-const {constants} = require("../constants")
-
+import constants from "../constants";
 
 
 const errorHandler = (err, req, res, next) => {
@@ -43,4 +42,4 @@ const errorHandler = (err, req, res, next) => {
   }
 };
 
-module.exports = errorHandler;
+export default errorHandler;
