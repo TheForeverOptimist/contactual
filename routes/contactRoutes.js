@@ -1,13 +1,12 @@
 import express from "express";
-const router = express.Router();
-
-const {
+import {
   getContacts,
   createContact,
   updateContact,
   getContact,
   deleteContact,
-} = require("../controllers/contactController");
+} from "../controllers/contactController.js";
+const router = express.Router();
 
 router.route("/").get(getContacts).post(createContact);
 
